@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>Fertilizer-Recommender</title>
+<link rel='stylesheet' href='static/assets/css/style2.css' type='text/css'>   
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
+<link rel="icon" href="static/assets/img/favicon.ico">
+</head>
+<body>
+    <div class="signup" style="margin-bottom: 6%;" >
+    <img data-aos="flip-up" class="img-fluid animated"  src="static/assets/img/FERT.png"  alt="sign up pic" >
+    <div class="content" data-aos="fade-down-left" data-aos-duration="2000">
+<h1>FERTILIZER RECOMMENDER</h1>
+  <form action="fert-predict" method="post" enctype="multipart/form-data">     
+  
+<label>Nitrogen</label><br>
+<input type="number" required placeholder="Enter the value(example:50)" name="N"> <br>
+<label>Phosphorus</label><br>
+<input type="number" required placeholder="Enter the value(example:50)" name="P"> <br>
+<label>Pottasium</label><br>
+<input type="number" required placeholder="Enter the value(example:50)" name="K"> <br>
+<label>Crop you want to grow</label><br>
+<input type="text" required placeholder="Enter the crop name" name="crop" > <br>
+
+<button type="submit">PREDICT</button>
+</form> 
+</div>
+</div>
+<footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Team Code Breakers</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Made with ❤️ by <a href="https://bootstrapmade.com/">Code Breakers</a>
+      </div>
+    </div>
+  </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
